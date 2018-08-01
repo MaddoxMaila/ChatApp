@@ -65,14 +65,14 @@ public class MainActivity extends AppCompatActivity {
                                 Toast.makeText(getApplicationContext(),"Login Credentials Incorrect",Toast.LENGTH_LONG).show();
                             }
                         } catch (JSONException e1) {
-                            e1.printStackTrace();
+                            Snackbar.make(view, e1, Snackbar.LENGTH_LONG).setAction("Action", null).show();
                         }
                     }
                 },
         new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError e) {
-                e.printStackTrace();
+                Snackbar.make(view, e, Snackbar.LENGTH_LONG).setAction("Action", null).show();
             }
         });
         mQueue.add(request);
