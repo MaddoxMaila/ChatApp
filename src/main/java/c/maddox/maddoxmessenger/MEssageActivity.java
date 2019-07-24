@@ -129,7 +129,7 @@ public class MEssageActivity extends AppCompatActivity {
     // Method For Sending Messages!!
     private void sendMessages(){
 
-        String url = "https://kampuscrush.com/android/list_chat.php";
+        String url = "<URL LINK>";
         StringRequest MessageRequest = new StringRequest(Request.Method.POST,
                  url,
                 new Response.Listener<String>() {
@@ -181,7 +181,7 @@ public class MEssageActivity extends AppCompatActivity {
     private void showMessages(){
 
         // Define URL
-        String url = "https://kampuscrush.com/android/list_chat.php";
+        String url = "<URL LINK>";
 
         // Define And Handle The Request Object
         StringRequest showMessageRequest = new StringRequest(Request.Method.POST,
