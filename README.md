@@ -1,2 +1,3 @@
-# Login
-Simple Login Screen Using Java and Php
+Itext
+
+A Simple Android Chat App Using kampuscrush.com api 
