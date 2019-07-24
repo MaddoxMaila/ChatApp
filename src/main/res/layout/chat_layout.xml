@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/profile_pic"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="13dp"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:id="@+id/chat_linear"
+        android:layout_width="259dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_toStartOf="@+id/seen_or_not"
+        android:layout_toEndOf="@+id/profile_pic"
+        android:background="@drawable/chat_bubble"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/user_handle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/chat_linear"
+            android:text="ddd"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/user_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ddd"
+            tools:textSize="12sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/seen_or_not"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:padding="6dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/seen_bubble"
+        tools:textSize="12sp" />
+
+</RelativeLayout>
